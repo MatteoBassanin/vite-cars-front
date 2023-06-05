@@ -39,6 +39,7 @@ export default {
                 <th scope="col">Price</th>
                 <th scope="col">CC</th>
                 <th scope="col">Year Release</th>
+                <th scope="col">Info</th>
             </tr>
         </thead>
         <tbody>
@@ -49,6 +50,9 @@ export default {
                 <td>{{ car.price }}</td>
                 <td>{{ car.cc }}</td>
                 <td>{{ car.year_release }}</td>
+                <td><router-link class="btn btn-primary " :to="{ name: 'show', params: { id: car.id } }">Cars
+                        List</router-link></td>
+
             </tr>
 
         </tbody>
