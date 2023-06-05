@@ -1,19 +1,17 @@
 <script >
 
-import AppIndex from './components/AppIndex.vue'
+
 
 export default {
-  components: {
-    AppIndex
-  }
+
 }
 </script>
 
 <template>
   <div class="container">
     <div class="row">
+      <router-view></router-view>
 
-      <AppIndex></AppIndex>
     </div>
   </div>
 </template>
