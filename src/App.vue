@@ -1,9 +1,24 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script >
+
+import AppIndex from './components/AppIndex.vue'
+
+export default {
+  components: {
+    AppIndex
+  }
+}
 </script>
 
-<template></template>
+<template>
+  <div class="container">
+    <div class="row">
 
-<style lang="sass" scoped>
+      <AppIndex></AppIndex>
+    </div>
+  </div>
+</template>
 
+
+<style lang="sass" >
+@use 'bootstrap'
 </style>
